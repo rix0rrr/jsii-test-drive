@@ -6,8 +6,10 @@ using System.Linq;
 
 namespace Serverless
 {
-    public class MyAppFunction : FunctionBase {
-        MyAppFunction(Construct scope, string id) : base(scope, id) {
+    public class MyAppFunction : FunctionBase
+    {
+        public MyAppFunction(Construct scope, string id) : base(scope, id) {
+        }
     }
 
     class Program
@@ -34,6 +36,5 @@ namespace Serverless
 
             app.Synth();
         }
-    }
     }
 }
