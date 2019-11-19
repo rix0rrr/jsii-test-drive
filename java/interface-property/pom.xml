@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.myorg</groupId>
-    <artifactId>callbacks</artifactId>
+    <artifactId>interface-property</artifactId>
     <version>0.1</version>
 
     <properties>
@@ -43,11 +43,6 @@
         </dependency>
 
         <!-- Respective AWS Construct Libraries -->
-        <dependency>
-            <groupId>software.amazon.awscdk</groupId>
-            <artifactId>ecs</artifactId>
-            <version>1.17.0.DEVPREVIEW</version>
-        </dependency>
         <dependency>
             <groupId>software.amazon.awscdk</groupId>
             <artifactId>codepipeline</artifactId>
