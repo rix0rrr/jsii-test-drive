@@ -48,5 +48,12 @@
             <artifactId>lambda</artifactId>
             <version>1.16.3.DEVPREVIEW</version>
         </dependency>
+
+        <!-- newest JSII -->
+        <dependency>
+            <groupId>software.amazon.jsii</groupId>
+            <artifactId>jsii-runtime</artifactId>
+            <version>0.20.6</version>
+        </dependency>
     </dependencies>
 </project>
