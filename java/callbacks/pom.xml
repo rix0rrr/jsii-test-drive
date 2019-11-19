@@ -39,31 +39,31 @@
         <dependency>
             <groupId>software.amazon.awscdk</groupId>
             <artifactId>core</artifactId>
-            <version>1.16.3.DEVPREVIEW</version>
+            <version>1.17.0.DEVPREVIEW</version>
         </dependency>
 
         <!-- Respective AWS Construct Libraries -->
         <dependency>
             <groupId>software.amazon.awscdk</groupId>
             <artifactId>ecs</artifactId>
-            <version>1.16.3.DEVPREVIEW</version>
+            <version>1.17.0.DEVPREVIEW</version>
         </dependency>
         <dependency>
             <groupId>software.amazon.awscdk</groupId>
             <artifactId>codepipeline</artifactId>
-            <version>1.16.3.DEVPREVIEW</version>
+            <version>1.17.0.DEVPREVIEW</version>
         </dependency>
         <dependency>
             <groupId>software.amazon.awscdk</groupId>
             <artifactId>codepipeline-actions</artifactId>
-            <version>1.16.3.DEVPREVIEW</version>
+            <version>1.17.0.DEVPREVIEW</version>
         </dependency>
 
         <!-- newest JSII -->
         <dependency>
             <groupId>software.amazon.jsii</groupId>
             <artifactId>jsii-runtime</artifactId>
-            <version>0.20.6</version>
+            <version>0.20.7</version>
         </dependency>
     </dependencies>
 </project>
