@@ -9,11 +9,6 @@ class HelloStack(core.Stack):
 
         s3.Bucket(self, 'Bucket',
             bucket_name=core.Token.as_string(core.Lazy.any_value(Difficult('bucket-name'))),
-            lifecycle_rules=[
-              core.Lazy.any_value(Difficult(s3.LifecycleRule(
-                id='asdf'
-                )))
-              ]
             )
 
 
@@ -24,4 +19,3 @@ class Difficult:
 
   def produce(self, context):
     return self.value
-
