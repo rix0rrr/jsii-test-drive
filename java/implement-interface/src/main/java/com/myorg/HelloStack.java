@@ -11,7 +11,7 @@ import software.amazon.awscdk.services.ec2.InstanceType;
 import software.amazon.awscdk.services.ec2.Vpc;
 import software.amazon.awscdk.services.ec2.VpcAttributes;
 
-import static software.amazon.awscdk.core.Token.asList;
+import static java.util.Arrays.asList;
 
 public class HelloStack extends Stack {
     public HelloStack(final Construct parent, final String id) {
