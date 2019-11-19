@@ -1,0 +1,3 @@
+{
+  "app": "npx ts-node bin/return-struct-from-callbacks.ts"
+}

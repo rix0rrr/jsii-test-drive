@@ -1,0 +1,3 @@
+{
+  "app": "npx ts-node bin/l1-and-overrides.ts"
+}

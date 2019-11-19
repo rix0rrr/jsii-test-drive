@@ -1,0 +1,21 @@
+{
+  "name": "jsii-test-drive",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rix0rrr/jsii-test-drive.git"
+  },
+  "keywords": [],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rix0rrr/jsii-test-drive/issues"
+  },
+  "homepage": "https://github.com/rix0rrr/jsii-test-drive#readme",
+  "devDependencies": {
+    "aws-cdk": "^1.16.3"
+  }
+}
