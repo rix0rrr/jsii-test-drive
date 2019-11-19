@@ -48,6 +48,16 @@
             <artifactId>ecs</artifactId>
             <version>1.16.3.DEVPREVIEW</version>
         </dependency>
+        <dependency>
+            <groupId>software.amazon.awscdk</groupId>
+            <artifactId>codepipeline</artifactId>
+            <version>1.16.3.DEVPREVIEW</version>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awscdk</groupId>
+            <artifactId>codepipeline-actions</artifactId>
+            <version>1.16.3.DEVPREVIEW</version>
+        </dependency>
 
         <!-- newest JSII -->
         <dependency>
