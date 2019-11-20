@@ -39,21 +39,14 @@
         <dependency>
             <groupId>software.amazon.awscdk</groupId>
             <artifactId>core</artifactId>
-            <version>1.17.0.DEVPREVIEW</version>
+            <version>1.17.1.DEVPREVIEW</version>
         </dependency>
 
         <!-- Respective AWS Construct Libraries -->
         <dependency>
             <groupId>software.amazon.awscdk</groupId>
             <artifactId>events</artifactId>
-            <version>1.17.0.DEVPREVIEW</version>
-        </dependency>
-
-        <!-- newest JSII -->
-        <dependency>
-            <groupId>software.amazon.jsii</groupId>
-            <artifactId>jsii-runtime</artifactId>
-            <version>0.20.7</version>
+            <version>1.17.1.DEVPREVIEW</version>
         </dependency>
     </dependencies>
 </project>
