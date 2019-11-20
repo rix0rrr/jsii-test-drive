@@ -11,6 +11,7 @@
     <PackageReference Include="Amazon.CDK.AWS.Events" Version="1.17.1-devpreview" />
     <PackageReference Include="Amazon.CDK.AWS.EC2" Version="1.17.1-devpreview" />
     <PackageReference Include="Amazon.CDK.AWS.ElasticLoadBalancingV2" Version="1.17.1-devpreview" />
+    <PackageReference Include="Amazon.JSII.Runtime" Version="0.20.7" />
   </ItemGroup>
 
 </Project>

@@ -2,6 +2,8 @@
 using Amazon.CDK.AWS.EC2;
 using Amazon.CDK.AWS.Events;
 using Amazon.CDK.AWS.ElasticLoadBalancingV2;
+using Amazon.JSII.Runtime.Deputy;
+using System.Collections.Generic;
 
 namespace StructFromCallbacks
 {
@@ -36,12 +38,13 @@ namespace StructFromCallbacks
         }
     }
 
-    public class MyEventTarget : IRuleTarget
+    public class MyEventTarget : DeputyBase, IRuleTarget
     {
         public IRuleTargetConfig Bind(IRule rule, string id = null)
         {
             return new RuleTargetConfig
             {
+                Id="myid",
                 Arn="myruletargetarn",
                 EcsParameters=new Amazon.CDK.AWS.Events.CfnRule.EcsParametersProperty
                 {
@@ -51,18 +54,17 @@ namespace StructFromCallbacks
         }
     }
 
-    public class MyLBTarget : IApplicationLoadBalancerTarget
+    public class MyLBTarget : DeputyBase, IApplicationLoadBalancerTarget
     {
         public ILoadBalancerTargetProps AttachToApplicationTargetGroup(IApplicationTargetGroup targetGroup)
         {
+            var targetJson = new Dictionary<string, object>();
+            targetJson.Add("port", 1234);
+            targetJson.Add("id", "i-1234");
             return new LoadBalancerTargetProps
             {
                 TargetType=TargetType.IP,
-                TargetJson=new MyTargetJson
-                {
-                    Port=1234,
-                    Id="i-1234"
-                }
+                TargetJson=targetJson
             };
         }
     }

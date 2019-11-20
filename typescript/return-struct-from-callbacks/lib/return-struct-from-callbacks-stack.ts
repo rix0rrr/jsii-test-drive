@@ -7,7 +7,7 @@ export class ReturnStructFromCallbacksStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    new events.Rule(this, 'Rule', { targets: [new MyEventTarget()] });
+    new events.Rule(this, 'Rule', { targets: [new MyEventTarget()], schedule: events.Schedule.cron({ day: '20' }) });
 
     const lb = new elb.ApplicationLoadBalancer(this, 'LB', { vpc: new ec2.Vpc(this, 'Vpc') });
     const listener = lb.addListener('Listener', { port: 80 });
