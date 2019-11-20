@@ -17,6 +17,10 @@ export class ReturnStructFromCallbacksStack extends cdk.Stack {
 
 class MyEventTarget implements events.IRuleTarget {
   public bind(rule: events.IRule, id?: string): events.RuleTargetConfig {
+    if (!id) {
+      throw new Error("Expected 'id' to be passed, but it was not!");
+    }
+
     return {
       id: 'asdf',
       arn: 'target-arn',
