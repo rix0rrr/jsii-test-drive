@@ -65,7 +65,9 @@ class MyAspect implements IAspect {
             System.out.println(cfnTopic.getCfnResourceType());
             cfnTopic.applyRemovalPolicy(RemovalPolicy.RETAIN);
             cfnTopic.addDependsOn(cfnTopic); // This will make it undeployable
-            assert cfnTopic.getDisplayName().equals("xxx");
+            if (!cfnTopic.getDisplayName().equals("xxx")) {
+                throw new AssertionError("Expected cfnTopic.displayName to be 'xxx', but was: " + cfnTopic.getDisplayName());
+            }
             cfnTopic.setDisplayName("yyy");
         }
     }
