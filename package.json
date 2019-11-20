@@ -16,6 +16,6 @@
   },
   "homepage": "https://github.com/rix0rrr/jsii-test-drive#readme",
   "devDependencies": {
-    "aws-cdk": "^1.16.3"
+    "aws-cdk": "^1.17.1"
   }
 }
